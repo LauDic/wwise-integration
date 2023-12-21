@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5246992484812396570}
   m_Layer: 0
   m_Name: GrassBlock
-  m_TagString: Untagged
+  m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,6 +37,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 5246992484812396570}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c57f9d43af5adfb4488302ec24efa738, type: 3}
@@ -87,7 +88,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: block (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c57f9d43af5adfb4488302ec24efa738, type: 3}
+      propertyPath: m_TagString
+      value: Grass
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c57f9d43af5adfb4488302ec24efa738, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5246992483822685597}
   m_SourcePrefab: {fileID: 100100000, guid: c57f9d43af5adfb4488302ec24efa738, type: 3}
 --- !u!1 &4904532198707196105 stripped
 GameObject:
@@ -102,9 +113,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4904532198707196105}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 8.8623905, y: 6.999999, z: 8.8623905}
   m_Center: {x: 0, y: 3.4999995, z: 0}
 --- !u!4 &5718364951259130483 stripped

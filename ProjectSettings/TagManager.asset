@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Grass
+  - Water
+  - Metal
+  - Dust
+  - Wood
   layers:
   - Default
   - TransparentFX
