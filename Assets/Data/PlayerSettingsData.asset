@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78876d654d1d664abc84b50c9fe825a, type: 3}
+  m_Name: PlayerSettingsData
+  m_EditorClassIdentifier: 
+  speed: 16
+  coyoteTargetTime: 0.3
+  jumpForce: 15
+  maxHorVelocity: 50
+  maxVertVelocity: 25
+  fallingMultiplier: 2.5
+  lowJumpMultiplier: 5
+  targetLowJumpTimer: 0.1
+  launchAttackDetectRadius: 9.82
+  ExternLaunchAttackDetectRadius: 11
+  launchAttackForce: 400
