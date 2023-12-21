@@ -13,11 +13,33 @@ Event	ID	Name			Wwise Object Path	Notes
 	3822983202	Ball_Water			\Default Work Unit\Ball\Ball_Water	
 	3991942870	Music			\Default Work Unit\Music	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	354267144	Terrain			\Default Work Unit\Terrain	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	Wood	Terrain			
+	2348606633	Dust	Terrain			
+	2473969246	Metal	Terrain			
+	2654748154	Water	Terrain			
+	4248645337	Grass	Terrain			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	149143475	BallVelocity			\Default Work Unit\BallVelocity	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	72350029	CaptainHit3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainHit3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit3		176464
+	77242540	EnemyShield1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\EnemyShield1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield1		138012
+	91643475	CaptainGrappleHook3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainGrappleHook3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Dust\CaptainGrappleHook3		176464
+	207084213	CaptainStepBoot1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainStepBoot1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot1		88264
 	306657653	CaptainHit1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainHit1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit1		146760
-	321371745	CaptainAttack2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack2		88264
+	321371745	CaptainAttack2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Grass\CaptainAttack2		88264
 	519664129	CaptainHit2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainHit2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit2		176464
-	563288652	CaptainAttack1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack1		88264
-	677833085	CaptainAttack3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack3		88264
+	563288652	CaptainAttack1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Grass\CaptainAttack1		88264
+	674452838	CaptainGrappleHook2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainGrappleHook2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Dust\CaptainGrappleHook2		176464
+	677833085	CaptainAttack3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainAttack3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Grass\CaptainAttack3		88264
+	715017872	CaptainStepBoot3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainStepBoot3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot3		88264
+	794182033	EnemyShield2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\EnemyShield2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield2		88264
+	799617148	EnemyShield3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\EnemyShield3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield3		88264
+	819555451	CaptainGrappleHook1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainGrappleHook1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Dust\CaptainGrappleHook1		176464
+	989695885	CaptainStepBoot2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Mac\SFX\CaptainStepBoot2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot2		88264
 

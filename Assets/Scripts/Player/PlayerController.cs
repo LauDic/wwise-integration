@@ -129,7 +129,6 @@ public class PlayerController : MonoBehaviour
         if (attackable != null)
         {
             playerCharacter.CheckRebound(other);
-
         }
 
         else

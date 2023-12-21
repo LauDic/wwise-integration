@@ -1,6 +1,625 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{DA1B0DA0-9AD5-462C-BBA4-2A3A5C190B74}" ShortID="919918491">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Movement" ID="{BCD85C07-B321-467D-A440-1EBD334026E6}" ShortID="314215907">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5EBDDB2D-C170-49CD-B90A-4D617DAC5660}"/>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{6C1E99EC-3E3F-49C4-A68A-5B8A1A111462}" ShortID="1011604906">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{2C6B2F4D-E86E-434B-A55C-C8DD9D017CEA}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>39.97103</XPos>
+														<YPos>1705</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>40</XPos>
+														<YPos>1911</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}" WorkUnitID="{6C89CE80-420D-4FB3-A22C-445864F5645E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Terrain" ID="{92AE2181-750B-4260-A793-9CD03666185F}" WorkUnitID="{6C89CE80-420D-4FB3-A22C-445864F5645E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Grass" ID="{DB338356-2EF8-482F-8005-0F69E6F305A2}" ShortID="452119552">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CaptainAttack1" ID="{0C30635B-AE76-4922-810A-B40763283D54}" ShortID="605839957">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainAttack1" ID="{9C17B26C-A7ED-4C1B-9294-17B3AE4CED4D}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainAttack1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="563288652"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainAttack1" ID="{9C17B26C-A7ED-4C1B-9294-17B3AE4CED4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainAttack2" ID="{3E55C926-4C98-4012-A103-C41FB9B929DB}" ShortID="156592938">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainAttack2" ID="{C3CE14AD-7F37-45AE-8008-A9651563DD49}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainAttack2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321371745"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainAttack2" ID="{C3CE14AD-7F37-45AE-8008-A9651563DD49}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainAttack3" ID="{184355A4-0998-43E7-9984-DF34D28A8BF9}" ShortID="1036937156">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainAttack3" ID="{50BA2618-B69B-45B5-88E7-78BEF004E7E7}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainAttack3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="677833085"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainAttack3" ID="{50BA2618-B69B-45B5-88E7-78BEF004E7E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Dust" ID="{6F4F3AAD-1259-4290-AC89-E82074C76F2F}" ShortID="427195760">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CaptainGrappleHook1" ID="{43219965-61B5-405A-B481-673EC00C81C6}" ShortID="161040028">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainGrappleHook1" ID="{4C791AA3-7E01-4969-A85D-5B10308DC1D8}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainGrappleHook1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="819555451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainGrappleHook1" ID="{4C791AA3-7E01-4969-A85D-5B10308DC1D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainGrappleHook2" ID="{0AB1D3EE-07C5-4E71-A0D1-586557CE9D26}" ShortID="560971096">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainGrappleHook2" ID="{68BDCFF2-E1D2-4994-8DF8-24E44E703816}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainGrappleHook2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="674452838"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainGrappleHook2" ID="{68BDCFF2-E1D2-4994-8DF8-24E44E703816}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainGrappleHook3" ID="{5C0A7944-8C9C-478A-BB09-6D55C5038355}" ShortID="455315840">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainGrappleHook3" ID="{F6817568-94AA-4C48-B294-90AFEB9E3D04}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainGrappleHook3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="91643475"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainGrappleHook3" ID="{F6817568-94AA-4C48-B294-90AFEB9E3D04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Metal" ID="{A50500CF-D175-4961-835D-12C61FF6804B}" ShortID="337784094">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="EnemyShield3" ID="{797C82C9-6E96-4944-8A09-DB6D2CA105E5}" ShortID="415526935">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EnemyShield3" ID="{261C036A-F94C-4F2D-B572-83049442D9AA}">
+													<Language>SFX</Language>
+													<AudioFile>EnemyShield3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="799617148"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="EnemyShield3" ID="{261C036A-F94C-4F2D-B572-83049442D9AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EnemyShield2" ID="{8CF16D77-91C0-4DBD-AB74-950D3F0321BB}" ShortID="388985179">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EnemyShield2" ID="{C0556665-28B8-4633-A99A-951F829D4B7A}">
+													<Language>SFX</Language>
+													<AudioFile>EnemyShield2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="794182033"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="EnemyShield2" ID="{C0556665-28B8-4633-A99A-951F829D4B7A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="EnemyShield1" ID="{373C20EC-857D-4D78-AE9C-8E1ABED57A7B}" ShortID="738869723">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="EnemyShield1" ID="{6C2D2503-5A3D-43DC-8E95-0973B0CB975E}">
+													<Language>SFX</Language>
+													<AudioFile>EnemyShield1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="77242540"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="EnemyShield1" ID="{6C2D2503-5A3D-43DC-8E95-0973B0CB975E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Wood" ID="{E830155D-B4D9-4768-A7D7-5C2F3F6B24CC}" ShortID="155920925">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CaptainStepBoot1" ID="{AC1D1F80-8A21-4D63-B521-38EAFEEA50DD}" ShortID="165218428">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainStepBoot1" ID="{6E381921-6B19-4906-BC9F-5F6C9200D120}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainStepBoot1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="207084213"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainStepBoot1" ID="{6E381921-6B19-4906-BC9F-5F6C9200D120}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainStepBoot2" ID="{2765FDAF-B923-4C3F-B3FD-44F710DA93BE}" ShortID="779994755">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainStepBoot2" ID="{CAEF0B22-65D8-4E4F-935F-6C918513C6C6}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainStepBoot2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="989695885"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainStepBoot2" ID="{CAEF0B22-65D8-4E4F-935F-6C918513C6C6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CaptainStepBoot3" ID="{E5467F93-E563-48D2-94AD-D25D7526604B}" ShortID="278871015">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CaptainStepBoot3" ID="{BE036A80-204F-4474-9937-199F5A252577}">
+													<Language>SFX</Language>
+													<AudioFile>CaptainStepBoot3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="715017872"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="CaptainStepBoot3" ID="{BE036A80-204F-4474-9937-199F5A252577}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Water" ID="{ECA0F9DF-126D-4572-AADA-8C2E1A456034}" ShortID="704016333">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{DB338356-2EF8-482F-8005-0F69E6F305A2}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wood" ID="{E830155D-B4D9-4768-A7D7-5C2F3F6B24CC}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Dust" ID="{6F4F3AAD-1259-4290-AC89-E82074C76F2F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Metal" ID="{A50500CF-D175-4961-835D-12C61FF6804B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water" ID="{ECA0F9DF-126D-4572-AADA-8C2E1A456034}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Water" ID="{6395F720-E7A8-47D7-998C-DC12FFE87CD3}"/>
+										<ItemList>
+											<ItemRef Name="Water" ID="{ECA0F9DF-126D-4572-AADA-8C2E1A456034}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Metal" ID="{81A07341-A0FC-4533-9F9A-958F2FFB86C1}"/>
+										<ItemList>
+											<ItemRef Name="Metal" ID="{A50500CF-D175-4961-835D-12C61FF6804B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Dust" ID="{8D8EC680-1D7F-44F1-A729-D855D66CE66F}"/>
+										<ItemList>
+											<ItemRef Name="Dust" ID="{6F4F3AAD-1259-4290-AC89-E82074C76F2F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Wood" ID="{4928E8A8-DA4D-45F0-BF7E-2BB5F142CCFB}"/>
+										<ItemList>
+											<ItemRef Name="Wood" ID="{E830155D-B4D9-4768-A7D7-5C2F3F6B24CC}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{DB338356-2EF8-482F-8005-0F69E6F305A2}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Environment" ID="{C421D527-73C7-484E-B06B-8785898AFFED}" ShortID="399573290">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Environment" ID="{2DBB2819-B824-4580-BDE2-AD45EDE81C2D}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Diamonds" ID="{8E50D251-7EDF-4316-AADC-7A08CA3C98E3}" ShortID="43652417">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Others" ID="{E7B19158-FA9C-4095-85B2-B8BF0F91F34C}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="TestObject" ID="{338AE9A8-530A-48CE-80A4-59F918FAC20A}" ShortID="302343199">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="TestAttenuation" ID="{A65D689A-7AB5-403D-B4BA-32D537FCAE91}" WorkUnitID="{23DB7FDB-E296-45E9-BB37-AE40C02BEBB2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AudioObject" ID="{CD08E243-94F5-4FD9-8DB7-189F74ECE561}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CaptainHit1" ID="{C0DF72DC-4C6C-4CBB-93AB-FCDC734ABCE0}" ShortID="437893584">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Others" ID="{E7B19158-FA9C-4095-85B2-B8BF0F91F34C}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CaptainHit1" ID="{21C6BD04-DEAE-4D1B-BDA2-FC2E17AF374E}">
+											<Language>SFX</Language>
+											<AudioFile>CaptainHit1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306657653"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CaptainHit1" ID="{21C6BD04-DEAE-4D1B-BDA2-FC2E17AF374E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CaptainHit2" ID="{329DD1AA-D941-46A5-A75F-CA0802382DDD}" ShortID="843339301">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Others" ID="{E7B19158-FA9C-4095-85B2-B8BF0F91F34C}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CaptainHit2" ID="{EF093E3C-21E2-477D-96A2-6F5843228D84}">
+											<Language>SFX</Language>
+											<AudioFile>CaptainHit2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="519664129"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CaptainHit2" ID="{EF093E3C-21E2-477D-96A2-6F5843228D84}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CaptainHit3" ID="{B7B4A15C-E96B-421C-BE71-81140782B558}" ShortID="1005392080">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Others" ID="{E7B19158-FA9C-4095-85B2-B8BF0F91F34C}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CaptainHit3" ID="{75306F8E-B157-4218-BD0C-89DE1902B003}">
+											<Language>SFX</Language>
+											<AudioFile>CaptainHit3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="72350029"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="CaptainHit3" ID="{75306F8E-B157-4218-BD0C-89DE1902B003}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Ui" ID="{046DAFFA-56A1-454F-81AB-5D3A40C75F85}" ShortID="509578224">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="UI" ID="{C9651A73-5164-4624-9266-5F966DE464B6}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

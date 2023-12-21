@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ball" ID="{8C5C1E20-77D3-457F-AC46-6A16DB9914B7}" ShortID="202213290">
+					<ChildrenList>
+						<Event Name="Ball_JumpImpact" ID="{80BD566D-2A78-4857-818F-3DC3E65285A9}"/>
+						<Event Name="Ball_Movement" ID="{7BF8ACFE-0F98-4969-89D8-84D4C554CFAD}">
+							<ChildrenList>
+								<Action Name="" ID="{19AF7845-D511-44FA-A180-3C386DFF8A6F}" ShortID="772763607">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Movement" ID="{BCD85C07-B321-467D-A440-1EBD334026E6}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ball_Water" ID="{E8392179-DD02-4027-9D0D-A239E7769416}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Diamond" ID="{AAD78601-FCEC-4DDC-AF42-5ADBACF7AF32}" ShortID="93364234">
+					<ChildrenList>
+						<Event Name="Diamond_Aim" ID="{100149DC-0EF4-4DF3-A728-70ABBAC98321}"/>
+						<Event Name="Diamond_Catch" ID="{E079205A-D464-4D67-A413-555124B05F43}"/>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Ambience" ID="{522C82B6-BA47-4E06-B75E-6A05004400D3}"/>
+				<Event Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}"/>
+				<Event Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}"/>
+				<Event Name="FastZone" ID="{16620065-24AD-42FC-A2F5-E21DC000A959}"/>
+				<Event Name="Test1_01" ID="{951777BE-C0DC-450A-B2F1-18690FDBF319}">
+					<ChildrenList>
+						<Action Name="" ID="{43438837-770A-43F9-B994-00517EC1C19B}" ShortID="1019337782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TestObject" ID="{338AE9A8-530A-48CE-80A4-59F918FAC20A}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Test1_02" ID="{2808840C-6533-471F-BB6C-364E8D676E19}">
+					<ChildrenList>
+						<Action Name="" ID="{9BEAC6E3-12C5-453C-9D3F-A1045B7CE1A7}" ShortID="6886144">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grass" ID="{DB338356-2EF8-482F-8005-0F69E6F305A2}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Test1_03" ID="{C934DD5F-F0D6-48C2-B434-CE7BDFA0CB5E}"/>
+				<Event Name="Test1_04" ID="{13E7E6BE-EAEF-4EDD-8F2C-C5A3245C1AF6}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

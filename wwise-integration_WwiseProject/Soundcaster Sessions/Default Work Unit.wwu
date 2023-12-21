@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4633F69E-B7D1-4043-A9B1-877360C65D7E}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{4633F69E-B7D1-4043-A9B1-877360C65D7E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4633F69E-B7D1-4043-A9B1-877360C65D7E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Movement" ID="{BF273D99-0B18-491E-A00A-F3D32592CC74}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Ball_Movement" ID="{7BF8ACFE-0F98-4969-89D8-84D4C554CFAD}" WorkUnitID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VictoryLane" ID="{02376BB7-D991-4106-9F01-B61BA3DD170A}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}"/>
+							<Value>39.4412107101281</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Metal" ID="{81A07341-A0FC-4533-9F9A-958F2FFB86C1}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
