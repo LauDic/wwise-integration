@@ -198,4 +198,13 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
     {
         attackTarget = newTarget;
     }
+
+    /// <summary>
+    /// Gets the current grounded state of the player.
+    /// </summary>
+    /// <returns>True if the player is grounded, otherwise false.</returns>
+    public bool IsGrounded()
+    {
+        return characterGrounded;
+    }
 }

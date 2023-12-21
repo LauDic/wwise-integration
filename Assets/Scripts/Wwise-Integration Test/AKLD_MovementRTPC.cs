@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class VelocityToRTPC : MonoBehaviour
+public class AKLD_MovementRTPC : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private AK.Wwise.RTPC RTPCVelocity; // Nombre del RTPC en Wwise
