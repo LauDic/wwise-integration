@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	85412153	Ambience			\Default Work Unit\Ambience	
+	285418122	Ball_Movement			\Default Work Unit\Ball\Ball_Movement	
+	1050447289	Diamond_Aim			\Default Work Unit\Diamond\Diamond_Aim	
+	1460941491	Diamond_Catch			\Default Work Unit\Diamond\Diamond_Catch	
+	2555741448	Finish			\Default Work Unit\Finish	
+	2556507283	Ball_JumpImpact			\Default Work Unit\Ball\Ball_JumpImpact	
+	2619332785	FastZone			\Default Work Unit\FastZone	
+	3773325688	Test1_01			\Default Work Unit\Test1_01	
+	3773325690	Test1_03			\Default Work Unit\Test1_03	
+	3773325691	Test1_02			\Default Work Unit\Test1_02	
+	3773325693	Test1_04			\Default Work Unit\Test1_04	
+	3822983202	Ball_Water			\Default Work Unit\Ball\Ball_Water	
+	3991942870	Music			\Default Work Unit\Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	72350029	CaptainHit3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit3		176464
+	306657653	CaptainHit1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit1		146760
+	321371745	CaptainAttack2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack2		88264
+	519664129	CaptainHit2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit2		176464
+	563288652	CaptainAttack1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack1		88264
+	677833085	CaptainAttack3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\TestRandom\CaptainAttack3		88264
+
