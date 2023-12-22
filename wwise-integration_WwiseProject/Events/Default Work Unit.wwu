@@ -10,7 +10,7 @@
 								<Action Name="" ID="{E882B820-C20A-4136-98A1-B4DB8C6A4AF1}" ShortID="126455815">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Jump" ID="{0F3DEADA-1C87-444B-9E91-C5F425FAFA52}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+											<ObjectRef Name="Jump" ID="{07E251AE-241B-4F01-9AB8-7EEA0A39063A}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -121,7 +121,17 @@
 					</ChildrenList>
 				</Folder>
 				<Event Name="Ambience" ID="{522C82B6-BA47-4E06-B75E-6A05004400D3}"/>
-				<Event Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}"/>
+				<Event Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}">
+					<ChildrenList>
+						<Action Name="" ID="{9157781A-B609-45AB-8D48-1659223CDC39}" ShortID="189466665">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="f" ID="{8AC6163A-67D8-4398-A20C-5040A05B2E6F}" WorkUnitID="{2A582038-35AF-4F6D-872D-6716DD149A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}">
 					<ChildrenList>
 						<Action Name="" ID="{FA740F8A-60DC-494B-8500-77236D45183D}" ShortID="292671327">

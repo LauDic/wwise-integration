@@ -456,7 +456,7 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>8.25974</XPos>
+														<XPos>5.12749</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log3</SegmentShape>
@@ -1390,231 +1390,15 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
-						<SwitchContainer Name="Jump" ID="{0F3DEADA-1C87-444B-9E91-C5F425FAFA52}" ShortID="592676898">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{E2AC0548-69F4-4846-A92A-B2B557154B18}" ShortID="730446410">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{105BF5D6-1B95-49A4-BE61-E83D22C2ACE5}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>5.01743</XPos>
-														<YPos>-200</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>40</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}" WorkUnitID="{6C89CE80-420D-4FB3-A22C-445864F5645E}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Terrain" ID="{92AE2181-750B-4260-A793-9CD03666185F}" WorkUnitID="{6C89CE80-420D-4FB3-A22C-445864F5645E}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="CaptainAttack11" ID="{57E48A56-334A-4128-87C8-DB7952C94AC9}" ShortID="237293902">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaptainAttack1" ID="{5304AE1E-40BC-41F3-BD4E-BC7B9B849440}">
-											<Language>SFX</Language>
-											<AudioFile>CaptainAttack1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="563288652"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="CaptainAttack1" ID="{5304AE1E-40BC-41F3-BD4E-BC7B9B849440}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaptainGrappleHookHit1" ID="{5692E468-431F-41BA-8EE7-DC120CCC0142}" ShortID="792122385">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaptainGrappleHookHit1 " ID="{6301F929-0DA9-45E1-BD1B-97443ED542E4}">
-											<Language>SFX</Language>
-											<AudioFile>CaptainGrappleHookHit1 .wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="920605265"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="CaptainGrappleHookHit1 " ID="{6301F929-0DA9-45E1-BD1B-97443ED542E4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaptainJump1" ID="{D2B5BCC6-4DD2-400D-975C-487439206B97}" ShortID="920121749">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaptainJump1" ID="{D6AA6CE1-A68A-447B-A0D9-56C7FB040CBF}">
-											<Language>SFX</Language>
-											<AudioFile>CaptainJump1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="895852747"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="CaptainJump1" ID="{D6AA6CE1-A68A-447B-A0D9-56C7FB040CBF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaptainGrappleHook1" ID="{5601A3A8-1656-42F7-B5B5-80B22D9182D6}" ShortID="503071459">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaptainGrappleHook1" ID="{17E2CD31-BA44-48AE-8BB8-46234D72CD0A}">
-											<Language>SFX</Language>
-											<AudioFile>CaptainGrappleHook1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="819555451"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="CaptainGrappleHook1" ID="{17E2CD31-BA44-48AE-8BB8-46234D72CD0A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="CaptainHit1" ID="{A3D6FA63-32D1-4F41-89C1-881AAB117FE6}" ShortID="902192169">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="CaptainHit1" ID="{0791ACBC-D273-4CB0-A49A-B183D24188E3}">
-											<Language>SFX</Language>
-											<AudioFile>CaptainHit1.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="306657653"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="CaptainHit1" ID="{0791ACBC-D273-4CB0-A49A-B183D24188E3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<ObjectLists/>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="CaptainAttack11" ID="{57E48A56-334A-4128-87C8-DB7952C94AC9}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="CaptainHit1" ID="{A3D6FA63-32D1-4F41-89C1-881AAB117FE6}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="CaptainGrappleHookHit1" ID="{5692E468-431F-41BA-8EE7-DC120CCC0142}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="CaptainGrappleHook1" ID="{5601A3A8-1656-42F7-B5B5-80B22D9182D6}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="CaptainJump1" ID="{D2B5BCC6-4DD2-400D-975C-487439206B97}"/>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Water" ID="{6395F720-E7A8-47D7-998C-DC12FFE87CD3}"/>
-										<ItemList>
-											<ItemRef Name="CaptainHit1" ID="{A3D6FA63-32D1-4F41-89C1-881AAB117FE6}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Metal" ID="{81A07341-A0FC-4533-9F9A-958F2FFB86C1}"/>
-										<ItemList>
-											<ItemRef Name="CaptainHit1" ID="{A3D6FA63-32D1-4F41-89C1-881AAB117FE6}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Dust" ID="{8D8EC680-1D7F-44F1-A729-D855D66CE66F}"/>
-										<ItemList>
-											<ItemRef Name="CaptainAttack11" ID="{57E48A56-334A-4128-87C8-DB7952C94AC9}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Wood" ID="{4928E8A8-DA4D-45F0-BF7E-2BB5F142CCFB}"/>
-										<ItemList>
-											<ItemRef Name="CaptainJump1" ID="{D2B5BCC6-4DD2-400D-975C-487439206B97}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}"/>
-										<ItemList>
-											<ItemRef Name="CaptainGrappleHook1" ID="{5601A3A8-1656-42F7-B5B5-80B22D9182D6}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
 						<RandomSequenceContainer Name="Dash" ID="{07C2CC39-9B5B-45DB-9A55-27DF2D1BD910}" ShortID="126213744">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="1"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1890,7 +1674,7 @@
 												<RTPC Name="" ID="{68100E54-759A-44E3-A9D9-6623CC5A4F60}" ShortID="408704375">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
+															<ObjectRef Name="BallVelocityWind" ID="{E8CC13BB-3D17-4BDD-AF44-189F8F2A4F67}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{D30E6F0F-F284-49EA-9574-F8BE354B22E5}">
@@ -1972,7 +1756,7 @@
 												<RTPC Name="" ID="{70DA0E4D-581B-4435-B111-ABDFD704C31F}" ShortID="116042260">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
+															<ObjectRef Name="BallVelocityWind" ID="{E8CC13BB-3D17-4BDD-AF44-189F8F2A4F67}" WorkUnitID="{FD9EF6FA-0E1D-4B7F-834A-D313BF84CF22}"/>
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{9D973328-EF71-4860-80E5-60A7CB572821}">
@@ -2025,6 +1809,84 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="Jump" ID="{07E251AE-241B-4F01-9AB8-7EEA0A39063A}" ShortID="515276623">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C49A073E-E4BF-44DD-9575-5A57CEBD7557}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ball_Jump_01" ID="{C8FF2050-D40C-4314-B42D-B61E46E100CB}" ShortID="274701426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ball_Jump_01" ID="{8122CAFC-EABD-44EE-AE57-59C10CD74C7F}">
+											<Language>SFX</Language>
+											<AudioFile>Ball_Jump_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301814184"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Ball_Jump_01" ID="{8122CAFC-EABD-44EE-AE57-59C10CD74C7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ball_Jump_02" ID="{F0C4C94E-82EA-4723-9890-91CA01203ACE}" ShortID="744005020">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Player" ID="{71E60325-3987-4E8C-9237-065A4FFBAC34}" WorkUnitID="{5D385E10-7F32-4471-BA23-2869466794F1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ball_Jump_02" ID="{84FBE614-E5FD-49D3-BE18-792CDBBFD1B3}">
+											<Language>SFX</Language>
+											<AudioFile>Ball_Jump_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="353887100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Ball_Jump_02" ID="{84FBE614-E5FD-49D3-BE18-792CDBBFD1B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
@@ -2273,11 +2135,6 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>9</Value>
-									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>

@@ -1,3 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	545371365	Low	Music			
+	748895195	None	Music			
+	2199336356	Medium_03	Music			
+	2199336357	Medium_02	Music			
+	2199336358	Medium_01	Music			
+	3550808449	High	Music			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	29600586	RevAux			\Default Work Unit\Master Audio Bus\RevAux	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\MainMix\Player	

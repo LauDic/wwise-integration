@@ -28,6 +28,25 @@ namespace AK
         static const AkUniqueID SPEEDTRIGGER = 1091336318U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID HIGH = 3550808449U;
+                static const AkUniqueID LOW = 545371365U;
+                static const AkUniqueID MEDIUM_01 = 2199336358U;
+                static const AkUniqueID MEDIUM_02 = 2199336357U;
+                static const AkUniqueID MEDIUM_03 = 2199336356U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC
+
+    } // namespace STATES
+
     namespace SWITCHES
     {
         namespace TERRAIN
