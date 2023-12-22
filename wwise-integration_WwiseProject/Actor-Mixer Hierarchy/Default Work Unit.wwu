@@ -1084,6 +1084,11 @@
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="2"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1432,7 +1437,21 @@
 										<ActiveSource Name="Ball_Dash_01" ID="{696EDAF7-8D5F-48CB-84D5-C8C0BA8CCC64}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Ball_Dash_02" ID="{B62F040C-BE59-4271-9DFD-CACB607F6BDC}" ShortID="288887507">
+								<Sound Name="Ball_Dash_2" ID="{B62F040C-BE59-4271-9DFD-CACB607F6BDC}" ShortID="288887507">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{67E0CAD7-11A3-40F7-878A-9AE3934AA1C1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-51"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>
@@ -2098,7 +2117,7 @@
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>
-				<ActorMixer Name="Ui" ID="{046DAFFA-56A1-454F-81AB-5D3A40C75F85}" ShortID="509578224">
+				<ActorMixer Name="Uii" ID="{046DAFFA-56A1-454F-81AB-5D3A40C75F85}" ShortID="509578224">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FD99CEE2-8FD9-4F34-9ECB-C0818A9066C2}"/>

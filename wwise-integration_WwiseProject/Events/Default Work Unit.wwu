@@ -154,6 +154,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="MusicOff" ID="{9AF797AB-EC1A-478B-BAB5-6F291878778E}">
+					<ChildrenList>
+						<Action Name="" ID="{6B6DCBDA-5388-4C79-B21B-C1A7DC519E8B}" ShortID="497160254">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{7523DB0A-E1F1-4963-B3D8-885F69CFD587}" WorkUnitID="{2A582038-35AF-4F6D-872D-6716DD149A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

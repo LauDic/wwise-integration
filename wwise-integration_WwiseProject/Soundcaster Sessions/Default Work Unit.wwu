@@ -13,6 +13,14 @@
 							<ObjectRef Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}" WorkUnitID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}" WorkUnitID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MusicOff" ID="{9AF797AB-EC1A-478B-BAB5-6F291878778E}" WorkUnitID="{0E5DC53A-B406-4ADA-AEB1-5B61BAED78F7}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -37,7 +45,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{85C200AD-5986-4D33-98DA-1E3E98E248CA}"/>
+						<CurrentStateRef Name="Medium_02" ID="{CC58E682-4CF0-4F08-B682-3295AC1F25A0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}"/>

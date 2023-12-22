@@ -2244,10 +2244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3e0b18b8f1580741ae8a34928278507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto1: {fileID: 224946899}
-  objeto2: {fileID: 950242959}
-  ejeDistancia: 3
-  distancia: 0
+  object1: {fileID: 224946899}
+  object2: {fileID: 950242959}
+  axisDistance: 3
+  distance: 0
   rtpc:
     idInternal: 0
     valueGuidInternal: 
@@ -6830,13 +6830,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854981488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 486.99, y: 185.4, z: 170.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1766485358}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &854981490
 MonoBehaviour:
@@ -15949,7 +15949,7 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 0}
     stopEventOnExit: 1
     areaActivated: 0
-  objetoAVerificar: {fileID: 0}
+  objectToCheck: {fileID: 0}
 --- !u!1001 &1421829214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19076,10 +19076,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 854981489}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1766485359
 MonoBehaviour:

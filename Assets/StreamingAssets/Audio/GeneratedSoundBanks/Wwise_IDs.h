@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID DIAMOND_CATCH = 1460941491U;
         static const AkUniqueID FINISH = 2555741448U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSICOFF = 3207097637U;
         static const AkUniqueID SPEEDTRIGGER = 1091336318U;
     } // namespace EVENTS
 
