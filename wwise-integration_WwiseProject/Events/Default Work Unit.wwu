@@ -63,7 +63,11 @@
 						<Event Name="Ball_Fall" ID="{763B4D12-BA33-47DD-B7B8-F41AADEA6543}">
 							<ChildrenList>
 								<Action Name="" ID="{D82F0893-025C-4ECD-904A-9818A4091D17}" ShortID="122916982">
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fall" ID="{3D46AA51-E75E-4AA7-99C9-D5D3933F3E51}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>

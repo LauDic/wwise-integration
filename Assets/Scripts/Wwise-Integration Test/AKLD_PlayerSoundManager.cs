@@ -7,11 +7,15 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event movementSoundEvent;
     [SerializeField] private AK.Wwise.Event jumpSoundEvent;
     [SerializeField] private AK.Wwise.Event impactEvent;
+    [SerializeField] private AK.Wwise.Event dashSoundEvent; // Nuevo evento de sonido
     [SerializeField] private AK.Wwise.RTPC velocityImpact;
     public float velocityImpactf;
 
     private bool wasGrounded = false;
     private bool wasJumping = false;
+    private bool wasAttacking = false; // Nuevo
+    private float groundedCheckDelay = 1.0f;
+    private float timeSinceLastGrounded = 0.0f;
 
     private void Start()
     {
@@ -32,40 +36,59 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
         if (playerCharacter != null)
         {
             bool isGrounded = playerCharacter.IsGrounded();
-
-            if (isGrounded && !wasGrounded)
-            {
-                movementSoundEvent.Post(gameObject);
-            }
-            else if (!isGrounded && wasGrounded)
-            {
-                movementSoundEvent.Stop(gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Linear);
-            }
-
             bool isJumping = playerCharacter.IsJumping();
+            bool isAttacking = playerCharacter.IsAttacking(); // Nuevo
 
-            if (isJumping && !wasJumping)
+            ManageMovementSound(isGrounded);
+            PlayJumpSound(isJumping);
+
+            if (!isGrounded)
             {
-                jumpSoundEvent.Post(gameObject);
+                timeSinceLastGrounded += Time.deltaTime;
+            }
+
+            if (isAttacking && !wasAttacking) // Nuevo
+            {
+                dashSoundEvent.Post(gameObject); // Nuevo evento de sonido
             }
 
             wasGrounded = isGrounded;
             wasJumping = isJumping;
+            wasAttacking = isAttacking; // Nuevo
+        }
+    }
+
+    private void ManageMovementSound(bool isGrounded)
+    {
+        if (isGrounded && !wasGrounded)
+        {
+            movementSoundEvent.Post(gameObject);
+        }
+        else if (!isGrounded && wasGrounded)
+        {
+            movementSoundEvent.Stop(gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Linear);
+        }
+    }
+
+    private void PlayJumpSound(bool isJumping)
+    {
+        if (isJumping && !wasJumping)
+        {
+            jumpSoundEvent.Post(gameObject);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (playerCharacter != null && playerCharacter.IsGrounded())
+        if (timeSinceLastGrounded >= groundedCheckDelay)
         {
-            // El jugador está en el suelo, no realizar el impacto
-            return;
+            float impactSpeed = Mathf.Abs(Vector3.Dot(collision.relativeVelocity, collision.contacts[0].normal));
+            velocityImpact.SetGlobalValue(impactSpeed);
+
+            impactEvent.Post(this.gameObject);
+            velocityImpactf = impactSpeed;
+
+            timeSinceLastGrounded = 0.0f;
         }
-
-        float impactSpeed = Mathf.Abs(Vector3.Dot(collision.relativeVelocity, collision.contacts[0].normal));
-        velocityImpact.SetGlobalValue(impactSpeed);
-
-        impactEvent.Post(this.gameObject);
-        velocityImpactf = impactSpeed;
     }
 }

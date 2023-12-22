@@ -18,6 +18,8 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
     private float currentTimeJumping;
     private float coyoteCurrentTime;
 
+
+
     private void Update()
     {
         CheckGrounded();
@@ -126,6 +128,9 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
         Vector3 destination = attackTarget.position - rb.transform.position;
         destination = destination.normalized;
         rb.AddRelativeForce(destination * playerSettings.launchAttackForce, ForceMode.Impulse);
+
+        characterAttacking = true;
+
     }
 
     /// <summary>
@@ -213,4 +218,9 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
     {
         return characterJumping;
     }
+    public bool IsAttacking()
+    {
+        return characterAttacking;
+    }
+
 }

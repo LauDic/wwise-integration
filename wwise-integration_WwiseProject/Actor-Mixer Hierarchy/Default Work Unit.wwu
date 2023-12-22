@@ -238,6 +238,11 @@
 									<PropertyList>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -451,19 +456,19 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>7.09965</XPos>
+														<XPos>8.25974</XPos>
 														<YPos>-200</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>11.69532</XPos>
-														<YPos>-2.83481</YPos>
+														<XPos>49.999</XPos>
+														<YPos>6.72465</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
 														<XPos>50</XPos>
-														<YPos>10.1217</YPos>
+														<YPos>6.42881</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -701,6 +706,11 @@
 									<PropertyList>
 										<Property Name="Color" Type="int16" Value="2"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1894,14 +1904,14 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>19.93326</XPos>
+																<XPos>9.82648</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>40</XPos>
-																<YPos>0</YPos>
+																<YPos>4.14862</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -1919,34 +1929,34 @@
 										<BlendTrackAssoc>
 											<ItemRef Name="New Random Container" ID="{84E75816-2FFE-4D90-86CE-A8C8706C5532}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>20.4239917269188</LeftEdgePos>
+												<LeftEdgePos>10.0502431173526</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>28.4239917269188</RightEdgePos>
+												<RightEdgePos>24.8377848303671</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
 											<ItemRef Name="430254__natymon__04-viento2" ID="{A2AC580F-A7A8-44EB-967E-CF4B57EFB0B2}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>25.1212458286986</LeftEdgePos>
+												<LeftEdgePos>17.8131256952169</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>31.5974553670745</RightEdgePos>
+												<RightEdgePos>27.3238179922136</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
 											<ItemRef Name="473765__kriptonauta001__20ventisca (1)" ID="{A3A2E7A8-4625-45F6-B5F6-2F2B2F692CA7}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>28.4239917269188</LeftEdgePos>
+												<LeftEdgePos>24.8377848303671</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>39.3176937569522</RightEdgePos>
+												<RightEdgePos>39.2287059927697</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
 										<BlendTrackAssoc>
 											<ItemRef Name="609539__klankbeeld__cold-city-night-nl-1028pm-210130_0230" ID="{1AD94C8B-A2AF-47EC-A48D-7899BEE759D4}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>31.5974553670745</LeftEdgePos>
+												<LeftEdgePos>27.3238179922136</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>40</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
@@ -1976,13 +1986,13 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>17.79755</XPos>
+																<XPos>13.48164</XPos>
 																<YPos>-200</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>25.09455</XPos>
-																<YPos>-1.40122</YPos>
+																<XPos>21.00111</XPos>
+																<YPos>-0.42467</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -2005,7 +2015,7 @@
 										<BlendTrackAssoc>
 											<ItemRef Name="463497__kinnikiko__wind" ID="{D6E567FF-5327-47A9-86F4-A6F24A8F2440}"/>
 											<CrossfadingInfo>
-												<LeftEdgePos>19.5328142380423</LeftEdgePos>
+												<LeftEdgePos>8.49833147942158</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
 												<RightEdgePos>40</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>

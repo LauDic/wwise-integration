@@ -1880,6 +1880,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 43d5f8b863c809640a02ff6e23844607, type: 2}
+  dashSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c535b80e8b195044a862667e8b3c5c8d, type: 2}
   velocityImpact:
     idInternal: 0
     valueGuidInternal: 
@@ -1902,6 +1906,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 38dc504ed74668d49a3dc95b2bde1207, type: 2}
+  forWindRTPCVelocity:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 67f93535ba54494439f10f3c17b2b91e, type: 2}
   velocidad: 0
 --- !u!114 &1157894385
 MonoBehaviour:
