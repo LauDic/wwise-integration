@@ -90,7 +90,17 @@
 				</Folder>
 				<Event Name="Ambience" ID="{522C82B6-BA47-4E06-B75E-6A05004400D3}"/>
 				<Event Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}"/>
-				<Event Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}"/>
+				<Event Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}">
+					<ChildrenList>
+						<Action Name="" ID="{FA740F8A-60DC-494B-8500-77236D45183D}" ShortID="292671327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Finish" ID="{36047FBE-6BCA-4BB8-9D87-B747D0CFD17E}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="SpeedTrigger" ID="{16620065-24AD-42FC-A2F5-E21DC000A959}">
 					<ChildrenList>
 						<Action Name="" ID="{99284498-8E3C-4EE7-AACE-9A30978EE776}" ShortID="688176148">

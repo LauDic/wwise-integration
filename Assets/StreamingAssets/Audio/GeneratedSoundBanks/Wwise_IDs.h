@@ -48,7 +48,8 @@ namespace AK
     {
         static const AkUniqueID BALLIMPACTVELOCITY = 2062901289U;
         static const AkUniqueID BALLVELOCITY = 149143475U;
-        static const AkUniqueID VICTORYLANE = 1267329435U;
+        static const AkUniqueID NEW_GAME_PARAMETER = 3671138082U;
+        static const AkUniqueID VICTORYFLAG = 741238639U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

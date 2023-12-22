@@ -13,6 +13,8 @@ public class AKLD_CheckTerrainSwitch : MonoBehaviour
     private AK.Wwise.Switch woodSwitch;
     [SerializeField]
     private AK.Wwise.Switch dustSwitch;
+    [SerializeField]
+    private AK.Wwise.Switch waterSwitch;
 
     [SerializeField]
     private float raycastDistance = 2f;
@@ -58,6 +60,10 @@ public class AKLD_CheckTerrainSwitch : MonoBehaviour
                     case "Dust":
                         dustSwitch.SetValue(gameobjectSwitch);
                         Debug.Log("Switch changed to Dust");
+                        break;
+                    case "Water":
+                        dustSwitch.SetValue(gameobjectSwitch);
+                        Debug.Log("Switch changed to water");
                         break;
                     default:
                         // Optional: Show a warning message if the tag doesn't match any of the above cases. It's currently inactive.

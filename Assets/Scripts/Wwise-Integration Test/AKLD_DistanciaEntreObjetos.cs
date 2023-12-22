@@ -58,6 +58,6 @@ public class AKLD_DistanciaEntreObjetos : MonoBehaviour
         }
 
         // Actualiza el RTPC con el valor de la distancia calculada
-        rtpc.SetValue(gameObject, distancia);
+        rtpc.SetGlobalValue(distancia);
     }
 }

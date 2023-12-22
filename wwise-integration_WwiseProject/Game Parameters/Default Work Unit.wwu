@@ -9,10 +9,9 @@
 						<Property Name="Max" Type="Real64" Value="40"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="VictoryLane" ID="{02376BB7-D991-4106-9F01-B61BA3DD170A}">
+				<GameParameter Name="VictoryFlag" ID="{02376BB7-D991-4106-9F01-B61BA3DD170A}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="40"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="BallImpactVelocity" ID="{5D0B21FA-0338-4199-A7E1-1840D0D2CE48}">
@@ -21,6 +20,7 @@
 						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="New_Game_Parameter" ID="{4BC2DD42-9F80-48AE-93D5-3E1013060D6B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
