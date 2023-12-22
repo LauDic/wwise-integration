@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
+        static const AkUniqueID BALL_DASH = 3622954633U;
+        static const AkUniqueID BALL_FALL = 197355458U;
         static const AkUniqueID BALL_IMPACT = 1165162655U;
         static const AkUniqueID BALL_JUMP = 134222113U;
         static const AkUniqueID BALL_MOVEMENT = 285418122U;
