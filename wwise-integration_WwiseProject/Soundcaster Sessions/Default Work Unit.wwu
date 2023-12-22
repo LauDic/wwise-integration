@@ -17,7 +17,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="VictoryFlag" ID="{02376BB7-D991-4106-9F01-B61BA3DD170A}"/>
-							<Value>50</Value>
+							<Value>49.8074454428755</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="BallImpactVelocity" ID="{5D0B21FA-0338-4199-A7E1-1840D0D2CE48}"/>
@@ -37,7 +37,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Low" ID="{F0E4B2A1-B15B-45CE-BB39-CA621EE115DC}"/>
+						<CurrentStateRef Name="None" ID="{85C200AD-5986-4D33-98DA-1E3E98E248CA}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{5FD933AF-C248-4B44-AD49-87F50B024DF8}"/>

@@ -518,7 +518,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26570
+  m_Name: pb_Mesh85628
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1155,7 +1155,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26182
+  m_Name: pb_Mesh85228
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1679,7 +1679,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26340
+  m_Name: pb_Mesh85398
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1923,7 +1923,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26404
+  m_Name: pb_Mesh85462
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4395,7 +4395,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26462
+  m_Name: pb_Mesh85520
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4560,7 +4560,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25990
+  m_Name: pb_Mesh85040
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5905,7 +5905,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26486
+  m_Name: pb_Mesh85544
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6166,7 +6166,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26318
+  m_Name: pb_Mesh85376
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6804,13 +6804,220 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.999998, y: 6.999999, z: 6.999999}
   m_Center: {x: -0.000061035156, y: 3.4999995, z: 0.0000038146973}
+--- !u!1 &854981488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 854981489}
+  - component: {fileID: 854981492}
+  - component: {fileID: 854981491}
+  - component: {fileID: 854981490}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &854981489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854981488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 486.99, y: 185.4, z: 170.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1766485358}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854981490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854981488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519fd0160c4cc1c4cbdc457559d0f505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areas:
+  - relativeCenter: {x: -0.63, y: 0, z: 0}
+    size: {x: 15, y: 15, z: 15}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 5376573adcc2950468d1dc1bab6b47f8, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 5376573adcc2950468d1dc1bab6b47f8, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -1.66, y: -6.19, z: 31.06}
+    size: {x: 10.12, y: 10, z: 10}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.5101628, b: 0.015686274, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 42acd69354eacb4418c7d3fb7149d5ce, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 42acd69354eacb4418c7d3fb7149d5ce, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -1, y: -44.2, z: 106.1}
+    size: {x: 20, y: 20, z: 20}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.015686274, b: 0.015686274, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 559bfdbdb9d40e74bb14d334e9e9c8d5, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 559bfdbdb9d40e74bb14d334e9e9c8d5, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: 38.1, y: -46.1, z: 200.4}
+    size: {x: 30, y: 16.1, z: 20}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0, b: 0.7604933, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 6121ddf129c05494bafbc4b4647157ab, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 6121ddf129c05494bafbc4b4647157ab, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -66.6, y: -73, z: 124.6}
+    size: {x: 30, y: 16.1, z: 20}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0, b: 0.7604933, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 6121ddf129c05494bafbc4b4647157ab, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 6121ddf129c05494bafbc4b4647157ab, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -23, y: -93.3, z: 228.4}
+    size: {x: 35, y: 16.1, z: 20}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 0, g: 0.1475563, b: 1, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    areaActivated: 0
+  objetoAVerificar: {fileID: 950242959}
+--- !u!114 &854981491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854981488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ae124bf2b3bfc4a90feecf03b3e40e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: edc72d3d2495d9f4b8e61c738981cc17, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &854981492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854981488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b6b78aec128a649a6c9c5a56a8b8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!43 &855284681
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26110
+  m_Name: pb_Mesh85152
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7762,7 +7969,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26418
+  m_Name: pb_Mesh85476
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -8085,7 +8292,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26384
+  m_Name: pb_Mesh85442
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -8307,7 +8514,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26652
+  m_Name: pb_Mesh85714
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -8789,7 +8996,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26596
+  m_Name: pb_Mesh85654
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -17212,7 +17419,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26502
+  m_Name: pb_Mesh85560
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -17742,7 +17949,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26208
+  m_Name: pb_Mesh85254
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -18063,7 +18270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26006
+  m_Name: pb_Mesh85056
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -18869,7 +19076,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 854981489}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19298,6 +19506,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 43d5f8b863c809640a02ff6e23844607, type: 2}
+  dashSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c535b80e8b195044a862667e8b3c5c8d, type: 2}
   velocityImpact:
     idInternal: 0
     valueGuidInternal: 
@@ -19899,7 +20111,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26440
+  m_Name: pb_Mesh85498
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2

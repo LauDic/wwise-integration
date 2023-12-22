@@ -7,13 +7,13 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
     [SerializeField] private AK.Wwise.Event movementSoundEvent;
     [SerializeField] private AK.Wwise.Event jumpSoundEvent;
     [SerializeField] private AK.Wwise.Event impactEvent;
-    [SerializeField] private AK.Wwise.Event dashSoundEvent; // Nuevo evento de sonido
+    [SerializeField] private AK.Wwise.Event dashSoundEvent;
     [SerializeField] private AK.Wwise.RTPC velocityImpact;
     public float velocityImpactf;
 
     private bool wasGrounded = false;
     private bool wasJumping = false;
-    private bool wasAttacking = false; // Nuevo
+    private bool wasAttacking = false; 
     private float groundedCheckDelay = 1.0f;
     private float timeSinceLastGrounded = 0.0f;
 

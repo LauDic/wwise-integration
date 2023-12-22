@@ -1028,6 +1028,177 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 208558158}
   m_SourcePrefab: {fileID: 100100000, guid: d293f9b3594deab4084c3ecc90fc063e, type: 3}
+--- !u!1 &775471237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775471238}
+  - component: {fileID: 775471239}
+  - component: {fileID: 775471241}
+  - component: {fileID: 775471240}
+  m_Layer: 0
+  m_Name: WwiseMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775471238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775471237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 62.48, y: 0, z: 66.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1639410806}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775471239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775471237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519fd0160c4cc1c4cbdc457559d0f505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areas:
+  - relativeCenter: {x: 2.06, y: 17.41, z: -32.1}
+    size: {x: 7.86, y: 8.61, z: 16.39}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 5376573adcc2950468d1dc1bab6b47f8, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 5376573adcc2950468d1dc1bab6b47f8, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -0.5, y: 3.8, z: -0}
+    size: {x: 31.6, y: 1.06, z: 25.52}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.37688032, b: 0.015686274, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 559bfdbdb9d40e74bb14d334e9e9c8d5, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 559bfdbdb9d40e74bb14d334e9e9c8d5, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: 25.71, y: 29.8, z: 68}
+    size: {x: 31.2, y: 23.1, z: 20.6}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.015686274, b: 0.07592125, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    areaActivated: 0
+  - relativeCenter: {x: -9.39, y: 3.22, z: 80.22}
+    size: {x: 18.8, y: 25.7, z: 6.59}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.015686274, b: 0.07592125, a: 1}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    changeStateOnExit: 1
+    stateOut:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9f44cee5e81e15e47a22fcb08acab7cc, type: 2}
+    areaActivated: 0
+  objetoAVerificar: {fileID: 1157894374}
+--- !u!114 &775471240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775471237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ae124bf2b3bfc4a90feecf03b3e40e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: edc72d3d2495d9f4b8e61c738981cc17, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &775471241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775471237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b6b78aec128a649a6c9c5a56a8b8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &799160859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,31 +1626,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.5376854
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.1440468
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 11.443491
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9730056
+      value: 0.21599065
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.23077485
+      value: 0.033046406
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0016984085
+      value: 0.9646112
       objectReference: {fileID: 0}
     - target: {fileID: 2430798211644904532, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00040282393
+      value: -0.1475848
       objectReference: {fileID: 0}
     - target: {fileID: 3871810414391755426, guid: a995b2fc943a6c24bb1dab6e51d70df4, type: 3}
       propertyPath: m_Name
@@ -2466,7 +2637,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 775471238}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
