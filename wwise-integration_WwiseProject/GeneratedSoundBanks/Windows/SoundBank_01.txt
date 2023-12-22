@@ -2,17 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Ambience	
 	134222113	Ball_Jump			\Default Work Unit\Ball\Ball_Jump	
 	285418122	Ball_Movement			\Default Work Unit\Ball\Ball_Movement	
-	1050447289	Diamond_Aim			\Default Work Unit\Diamond\Diamond_Aim	
+	1091336318	SpeedTrigger			\Default Work Unit\SpeedTrigger	
 	1165162655	Ball_Impact			\Default Work Unit\Ball\Ball_Impact	
 	1460941491	Diamond_Catch			\Default Work Unit\Diamond\Diamond_Catch	
 	2555741448	Finish			\Default Work Unit\Finish	
-	2619332785	FastZone			\Default Work Unit\FastZone	
-	3773325688	Test1_01			\Default Work Unit\Test1_01	
-	3773325690	Test1_03			\Default Work Unit\Test1_03	
-	3773325691	Test1_02			\Default Work Unit\Test1_02	
-	3773325693	Test1_04			\Default Work Unit\Test1_04	
+	3312059336	Diamond_AimOff			\Default Work Unit\Diamond\Diamond_AimOff	
 	3822983202	Ball_Water			\Default Work Unit\Ball\Ball_Water	
 	3991942870	Music			\Default Work Unit\Music	
+	4096946770	Diamond_AimOn			\Default Work Unit\Diamond\Diamond_AimOn	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	354267144	Terrain			\Default Work Unit\Terrain	
@@ -29,21 +26,26 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2062901289	BallImpactVelocity			\Default Work Unit\BallImpactVelocity	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	72350029	CaptainHit3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit3		176464
 	77242540	EnemyShield1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\EnemyShield1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield1		138012
 	91643475	CaptainGrappleHook3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainGrappleHook3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Dust\CaptainGrappleHook3		176464
+	180824468	Whoosh,Sound Design,Power Down,Groan,Choppy,Very High	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\Whoosh,Sound Design,Power Down,Groan,Choppy,Very High_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\FastLane\Whoosh,Sound Design,Power Down,Groan,Choppy,Very High		609548
 	207084213	CaptainStepBoot1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainStepBoot1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot1		88264
+	255342118	UI SFX Down Example	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\UI SFX Down Example_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\UI SFX Down Example		220564
 	306657653	CaptainHit1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainHit1		146760
 	321371745	CaptainAttack2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Grass\CaptainAttack2		88264
-	519664129	CaptainHit2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainHit2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\TestObject\CaptainHit2		176464
-	563288652	CaptainAttack1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainAttack1		88264
+	362998958	Whoosh,Sound Design,Whip By,Airy to Whine,High	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\Whoosh,Sound Design,Whip By,Airy to Whine,High_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\FastLane\Whoosh,Sound Design,Whip By,Airy to Whine,High		341768
+	563288652	CaptainAttack11	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainAttack11		88264
 	674452838	CaptainGrappleHook2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainGrappleHook2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Dust\CaptainGrappleHook2		176464
 	677833085	CaptainAttack3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainAttack3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Grass\CaptainAttack3		88264
 	715017872	CaptainStepBoot3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainStepBoot3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot3		88264
+	738562996	Whoosh,Sound Design,Blast,Watery,Crash	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\Whoosh,Sound Design,Blast,Watery,Crash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\FastLane\Whoosh,Sound Design,Blast,Watery,Crash		350596
+	746813493	Whoosh,Sound Design,Logo,Airy to Shiver,Uncertain,Low	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\Whoosh,Sound Design,Logo,Airy to Shiver,Uncertain,Low_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\FastLane\Whoosh,Sound Design,Logo,Airy to Shiver,Uncertain,Low		600112
 	794182033	EnemyShield2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\EnemyShield2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield2		88264
 	799617148	EnemyShield3	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\EnemyShield3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Metal\EnemyShield3		88264
 	819555451	CaptainGrappleHook1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainGrappleHook1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainGrappleHook1		176464
 	895852747	CaptainJump1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainJump1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainJump1		88264
 	920605265	CaptainGrappleHookHit1	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainGrappleHookHit1 _10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\CaptainGrappleHookHit1		88264
 	989695885	CaptainStepBoot2	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\CaptainStepBoot2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Movement\Wood\CaptainStepBoot2		88264
+	1001841442	Item Found	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\Item Found_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\Item Found		473288
+	1051050919	UI SFX Up example	C:\Proyectos Programas\Unity\3darMirror\wwise-integration\wwise-integration_WwiseProject\.cache\Windows\SFX\UI SFX Up example_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Diamonds\UI SFX Up example		220564
 

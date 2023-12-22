@@ -7809,6 +7809,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1691113767424663219, guid: 3c49e5e994434464c8f8a514f5de7f24, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1771765836}
+    - targetCorrespondingSourceObject: {fileID: 1691113767424663219, guid: 3c49e5e994434464c8f8a514f5de7f24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1771765842}
+    - targetCorrespondingSourceObject: {fileID: 1691113767424663219, guid: 3c49e5e994434464c8f8a514f5de7f24, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1771765843}
   m_SourcePrefab: {fileID: 100100000, guid: 3c49e5e994434464c8f8a514f5de7f24, type: 3}
 --- !u!4 &950242959 stripped
 Transform:
@@ -14385,6 +14391,7 @@ GameObject:
   - component: {fileID: 1411220615}
   - component: {fileID: 1411220614}
   - component: {fileID: 1411220613}
+  - component: {fileID: 1411220619}
   m_Layer: 0
   m_Name: Pipe
   m_TagString: Metal
@@ -15506,6 +15513,30 @@ Transform:
   m_Father: {fileID: 587315440}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!114 &1411220619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411220612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77fe72fb6407d74d94a96d7b0c89594, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areas:
+  - relativeCenter: {x: -13.53, y: -10.3, z: -12.44}
+    size: {x: 17, y: 17, z: 17}
+    message: "Dentro del \xE1rea"
+    gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    myEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    stopEventOnExit: 1
+    areaActivated: 0
+  objetoAVerificar: {fileID: 0}
 --- !u!1001 &1421829214
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15566,6 +15597,10 @@ PrefabInstance:
       propertyPath: speedBoost
       value: 750
       objectReference: {fileID: 0}
+    - target: {fileID: 5648421710985104173, guid: ce0c3c8613775eb4d855ac1e3a8e50f6, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1421829221}
     - target: {fileID: 5648421710985104209, guid: ce0c3c8613775eb4d855ac1e3a8e50f6, type: 3}
       propertyPath: m_Name
       value: SpeedTrigger (6)
@@ -15580,6 +15615,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5648421710985104168, guid: ce0c3c8613775eb4d855ac1e3a8e50f6, type: 3}
   m_PrefabInstance: {fileID: 1421829214}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1421829221 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1900994271598626207, guid: ce0c3c8613775eb4d855ac1e3a8e50f6, type: 3}
+  m_PrefabInstance: {fileID: 1421829214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18c25393d737204497f8878dcc52233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1427109478
 GameObject:
   m_ObjectHideFlags: 0
@@ -18573,6 +18619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766485358}
   - component: {fileID: 1766485357}
+  - component: {fileID: 1766485359}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -18620,6 +18667,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766485359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766485356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5553f63fce3080d4d84181b787f6bdb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0eb89c07afa3ee54194e366ab02970bc, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1771149051
 GameObject:
   m_ObjectHideFlags: 0
@@ -18977,7 +19048,67 @@ MonoBehaviour:
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5bc7d72457968d947bb746e366b7fb39, type: 2}
   raycastDistance: 2
+  gameobjectSwitch: {fileID: 1771765830}
   tagChecking: 0
+--- !u!114 &1771765837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1696655024, guid: 3c49e5e994434464c8f8a514f5de7f24, type: 3}
+  m_PrefabInstance: {fileID: 950242958}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771765830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f68749dde66f2a144b565501be711c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1771765842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771765830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432a21d946694c44dbd5d3619d4d79f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 1771765837}
+  movementSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 047112598357ec74ebb4c6f8b52feeee, type: 2}
+  jumpSoundEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7fd4fccd7865fb2498484c4d7bae6765, type: 2}
+  impactEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 43d5f8b863c809640a02ff6e23844607, type: 2}
+  velocityImpact:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 38dc504ed74668d49a3dc95b2bde1207, type: 2}
+  velocityImpactf: 0
+--- !u!114 &1771765843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771765830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0de1bfaf3369554d84f97e730d6e16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 950242961}
+  RTPCVelocity:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 38dc504ed74668d49a3dc95b2bde1207, type: 2}
+  velocidad: 0
 --- !u!1 &1772070905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7097765225136567597, guid: 0a5aa95df05e9ed488d0133267c360ca, type: 3}
@@ -19501,7 +19632,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28534
+  m_Name: pb_Mesh26420
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2

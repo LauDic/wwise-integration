@@ -43,38 +43,65 @@
 				</Folder>
 				<Folder Name="Diamond" ID="{AAD78601-FCEC-4DDC-AF42-5ADBACF7AF32}" ShortID="93364234">
 					<ChildrenList>
-						<Event Name="Diamond_Aim" ID="{100149DC-0EF4-4DF3-A728-70ABBAC98321}"/>
-						<Event Name="Diamond_Catch" ID="{E079205A-D464-4D67-A413-555124B05F43}"/>
+						<Event Name="Diamond_AimOn" ID="{100149DC-0EF4-4DF3-A728-70ABBAC98321}">
+							<ChildrenList>
+								<Action Name="" ID="{98F01748-127C-4ADF-9851-1470C7676C68}" ShortID="259756983">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI SFX Up example" ID="{8569619F-46A6-46C5-8151-03029BD8B070}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Diamond_Catch" ID="{E079205A-D464-4D67-A413-555124B05F43}">
+							<ChildrenList>
+								<Action Name="" ID="{13A5330B-4B2A-4E69-A4F1-55F9661DCA40}" ShortID="233710601">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Item Found" ID="{73A8938B-6986-43F1-923D-57FA9D7A0014}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Diamond_AimOff" ID="{D07B56B1-33A0-42CA-8E94-4DBA8B85B6C9}">
+							<ChildrenList>
+								<Action Name="" ID="{1623B17C-EDB8-4A86-A958-2D64F07C6464}" ShortID="472138303">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI SFX Up example" ID="{8569619F-46A6-46C5-8151-03029BD8B070}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B684547E-BD0B-4506-9C1C-C969D1F634CC}" ShortID="892237555">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI SFX Down Example" ID="{A1B4420B-FEA4-499E-BE26-F43DFACBC72E}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Ambience" ID="{522C82B6-BA47-4E06-B75E-6A05004400D3}"/>
 				<Event Name="Music" ID="{2688B061-A899-4A86-9D7C-4FA7C31BE18E}"/>
 				<Event Name="Finish" ID="{AA2023AC-EEAB-4D8E-BFB3-055E4320C722}"/>
-				<Event Name="FastZone" ID="{16620065-24AD-42FC-A2F5-E21DC000A959}"/>
-				<Event Name="Test1_01" ID="{951777BE-C0DC-450A-B2F1-18690FDBF319}">
+				<Event Name="SpeedTrigger" ID="{16620065-24AD-42FC-A2F5-E21DC000A959}">
 					<ChildrenList>
-						<Action Name="" ID="{43438837-770A-43F9-B994-00517EC1C19B}" ShortID="1019337782">
+						<Action Name="" ID="{99284498-8E3C-4EE7-AACE-9A30978EE776}" ShortID="688176148">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="TestObject" ID="{338AE9A8-530A-48CE-80A4-59F918FAC20A}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+									<ObjectRef Name="FastLane" ID="{A3ECE227-7C5D-4A5F-B508-8342072C5DE6}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Test1_02" ID="{2808840C-6533-471F-BB6C-364E8D676E19}">
-					<ChildrenList>
-						<Action Name="" ID="{9BEAC6E3-12C5-453C-9D3F-A1045B7CE1A7}" ShortID="6886144">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grass" ID="{DB338356-2EF8-482F-8005-0F69E6F305A2}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Test1_03" ID="{C934DD5F-F0D6-48C2-B434-CE7BDFA0CB5E}"/>
-				<Event Name="Test1_04" ID="{13E7E6BE-EAEF-4EDD-8F2C-C5A3245C1AF6}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

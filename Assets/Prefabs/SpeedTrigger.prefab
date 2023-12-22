@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5648421710985104173}
   - component: {fileID: 5648421710985104175}
   - component: {fileID: 5648421710985104174}
+  - component: {fileID: 1900994271598626207}
   m_Layer: 0
   m_Name: SpeedTrigger
   m_TagString: Untagged
@@ -44,9 +45,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5648421710985104209}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1.0014468, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5648421710985104211
@@ -78,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTrigger: {fileID: 5648421710985104211}
   speedBoost: 450
+  audioManager: {fileID: 1900994271598626207}
 --- !u!33 &5648421710985104175
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -128,3 +138,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1900994271598626207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648421710985104209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18c25393d737204497f8878dcc52233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedBoostEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a35a672a2ca96a34cb13cdd679067cc1, type: 2}

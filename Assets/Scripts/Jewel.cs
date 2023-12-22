@@ -7,6 +7,14 @@ public class Jewel : MonoBehaviour, IAttackable, ITargetable
     [SerializeField] private ParticleSystem deathParticles;
     [SerializeField] private ToggleOutline toggleOutline;
 
+    private JewelAudioManager audioManager;
+
+    private void Start()
+    {
+        // Para obtener la referencia al JewelAudioManager en el mismo GameObject
+        audioManager = GetComponent<JewelAudioManager>();
+    }
+
     /// <summary>
     /// Set object targetted state
     /// </summary>
@@ -14,6 +22,9 @@ public class Jewel : MonoBehaviour, IAttackable, ITargetable
     public void SetTargettedState(bool value)
     {
         toggleOutline.SetOutlines(value);
+        
+        // Llama al método en JewelAudioManager cuando cambia el estado objetivo
+        audioManager.OnTargetStateChanged(value);
     }
 
     /// <summary>
@@ -23,6 +34,9 @@ public class Jewel : MonoBehaviour, IAttackable, ITargetable
     {
         if (deathParticles != null)
             deathParticles.Play();
+
+        // Llama al método en JewelAudioManager cuando se recibe un ataque
+        audioManager.ReceiveAttack();
 
         gameObject.SetActive(false);
     }

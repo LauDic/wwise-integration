@@ -18,15 +18,12 @@ namespace AK
         static const AkUniqueID BALL_JUMP = 134222113U;
         static const AkUniqueID BALL_MOVEMENT = 285418122U;
         static const AkUniqueID BALL_WATER = 3822983202U;
-        static const AkUniqueID DIAMOND_AIM = 1050447289U;
+        static const AkUniqueID DIAMOND_AIMOFF = 3312059336U;
+        static const AkUniqueID DIAMOND_AIMON = 4096946770U;
         static const AkUniqueID DIAMOND_CATCH = 1460941491U;
-        static const AkUniqueID FASTZONE = 2619332785U;
         static const AkUniqueID FINISH = 2555741448U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID TEST1_01 = 3773325688U;
-        static const AkUniqueID TEST1_02 = 3773325691U;
-        static const AkUniqueID TEST1_03 = 3773325690U;
-        static const AkUniqueID TEST1_04 = 3773325693U;
+        static const AkUniqueID SPEEDTRIGGER = 1091336318U;
     } // namespace EVENTS
 
     namespace SWITCHES

@@ -93,9 +93,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631221449942462051}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4258985910291648141, guid: a9e884a69aaa3844b93ecdb284717c66, type: 3}
@@ -774,6 +782,7 @@ GameObject:
   - component: {fileID: 7097765225136567585}
   - component: {fileID: 8386680514799477936}
   - component: {fileID: 5174190781842671525}
+  - component: {fileID: 3596789136304762073}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -826,3 +835,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlines:
   - {fileID: 4831890439584795584}
+--- !u!114 &3596789136304762073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097765225136567597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8773cae1202af41b5dbf90b0877c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackReceivedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3a1b7cd39f725e348b8db92e5d2dd3b4, type: 2}
+  onTarget:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 73d8101969315014da4479c8059e2abe, type: 2}
+  offTarget:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9864c0718444fa745956da7adf7b2242, type: 2}

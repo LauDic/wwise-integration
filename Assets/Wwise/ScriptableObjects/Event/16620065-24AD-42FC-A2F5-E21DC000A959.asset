@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15100907fae439a48aa8bfca1018cb7d, type: 3}
-  m_Name: 2808840C-6533-471F-BB6C-364E8D676E19
+  m_Name: 16620065-24AD-42FC-A2F5-E21DC000A959
   m_EditorClassIdentifier: 
-  objectName: Test1_02
-  id: 3773325691
-  guid: 2808840C-6533-471F-BB6C-364E8D676E19
+  objectName: SpeedTrigger
+  id: 1091336318
+  guid: 16620065-24AD-42FC-A2F5-E21DC000A959
