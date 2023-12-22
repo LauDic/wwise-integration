@@ -1,3 +1,4 @@
+//Script created by Lautaro Dichio for 3dar audio developer test.
 using UnityEngine;
 
 public class AKLD_CheckTerrainSwitch : MonoBehaviour
@@ -37,45 +38,51 @@ public class AKLD_CheckTerrainSwitch : MonoBehaviour
         if (Physics.Raycast(ray, out hit, raycastDistance))
         {
             // Check if the current tag is different from the last detected tag
-            if (hit.collider.tag != lastDetectedTag)
+            if (hit.collider.tag == lastDetectedTag)
             {
-                // Update the last detected tag
-                lastDetectedTag = hit.collider.tag;
-
-                // Change the Wwise switch based on the tag of the impacted object
-                switch (lastDetectedTag)
-                {
-                    case "Metal":
-                        metalSwitch.SetValue(gameobjectSwitch);
-                        Debug.Log("Switch changed to Metal");
-                        break;
-                    case "Grass":
-                        grassSwitch.SetValue(gameobjectSwitch);
-                        Debug.Log("Switch changed to Grass");
-                        break;
-                    case "Wood":
-                        woodSwitch.SetValue(gameobjectSwitch);
-                        Debug.Log("Switch changed to Wood");
-                        break;
-                    case "Dust":
-                        dustSwitch.SetValue(gameobjectSwitch);
-                        Debug.Log("Switch changed to Dust");
-                        break;
-                    case "Water":
-                        dustSwitch.SetValue(gameobjectSwitch);
-                        Debug.Log("Switch changed to water");
-                        break;
-                    default:
-                        // Optional: Show a warning message if the tag doesn't match any of the above cases. It's currently inactive.
-                        if (tagChecking) { Debug.LogWarning($"Unrecognized tag: {lastDetectedTag}"); }
-                        break;
-                }
+                return;
             }
+            // Update the last detected tag
+            lastDetectedTag = hit.collider.tag;
+
+            // Change the Wwise switch based on the tag of the impacted object
+            SetCurrentTerrain();
         }
         else
         {
             // No collision, reset the last detected tag
             lastDetectedTag = "";
+        }
+    }
+
+    private void SetCurrentTerrain()
+    {
+        switch (lastDetectedTag)
+        {
+            case "Metal":
+                metalSwitch.SetValue(gameobjectSwitch);
+                Debug.Log("Switch changed to Metal");
+                break;
+            case "Grass":
+                grassSwitch.SetValue(gameobjectSwitch);
+                Debug.Log("Switch changed to Grass");
+                break;
+            case "Wood":
+                woodSwitch.SetValue(gameobjectSwitch);
+                Debug.Log("Switch changed to Wood");
+                break;
+            case "Dust":
+                dustSwitch.SetValue(gameobjectSwitch);
+                Debug.Log("Switch changed to Dust");
+                break;
+            case "Water":
+                dustSwitch.SetValue(gameobjectSwitch);
+                Debug.Log("Switch changed to water");
+                break;
+            default:
+                // Optional: Show a warning message if the tag doesn't match any of the above cases. It's currently inactive.
+                if (tagChecking) { Debug.LogWarning($"Unrecognized tag: {lastDetectedTag}"); }
+                break;
         }
     }
 }

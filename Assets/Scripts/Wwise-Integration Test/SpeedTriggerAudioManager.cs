@@ -4,10 +4,10 @@ public class SpeedTriggerAudioManager : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event speedBoostEvent;
 
-    // Llama a este método cuando se activa el evento de aumento de velocidad
+    // Call this method when the speed increase event is triggered.
     public void PlaySpeedBoostEvent()
     {
-        // Reproduce el evento de aumento de velocidad de Wwise
+        // Plays Wwise speed-up event
         speedBoostEvent.Post(this.gameObject);
     }
 }

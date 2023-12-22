@@ -8,22 +8,22 @@ public class JewelAudioManager : MonoBehaviour
 
     private bool isTargeted = false;
 
-    // Llama a este método cuando se recibe un ataque
+    // call this method when an attack is received.
     public void ReceiveAttack()
     {
-        // Reproduce el sonido de partículas o realiza otras acciones de audio aquí
+        // Play the particle sound or perform other audio actions here
         attackReceivedEvent.Post(this.gameObject);
     }
 
-    // Llama a este método cuando cambia el estado objetivo
+    //  Call this method when the target state changes.
     public void OnTargetStateChanged(bool isTargeted)
     {
-        // Si cambia a true y no estaba previamente en true, envía el evento onTarget
+        // If it changes to true and was not previously set to true, it sends the onTarget event
         if (isTargeted && !this.isTargeted)
         {
             onTarget.Post(this.gameObject);
         }
-        // Si cambia a false y estaba previamente en true, envía el evento offTarget
+        // If it changes to false and it was previously set to true, it sends the offTarget event.
         else if (!isTargeted && this.isTargeted)
         {
             offTarget.Post(this.gameObject);

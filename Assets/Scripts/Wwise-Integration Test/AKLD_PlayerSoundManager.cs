@@ -13,7 +13,7 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
 
     private bool wasGrounded = false;
     private bool wasJumping = false;
-    private bool wasAttacking = false; 
+    private bool wasAttacking = false;
     private float groundedCheckDelay = 1.0f;
     private float timeSinceLastGrounded = 0.0f;
 
@@ -33,29 +33,31 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
 
     private void Update()
     {
-        if (playerCharacter != null)
+        if (playerCharacter == null)
         {
-            bool isGrounded = playerCharacter.IsGrounded();
-            bool isJumping = playerCharacter.IsJumping();
-            bool isAttacking = playerCharacter.IsAttacking(); // Nuevo
-
-            ManageMovementSound(isGrounded);
-            PlayJumpSound(isJumping);
-
-            if (!isGrounded)
-            {
-                timeSinceLastGrounded += Time.deltaTime;
-            }
-
-            if (isAttacking && !wasAttacking) // Nuevo
-            {
-                dashSoundEvent.Post(gameObject); // Nuevo evento de sonido
-            }
-
-            wasGrounded = isGrounded;
-            wasJumping = isJumping;
-            wasAttacking = isAttacking; // Nuevo
+            return;
         }
+
+        bool isGrounded = playerCharacter.IsGrounded();
+        bool isJumping = playerCharacter.IsJumping();
+        bool isAttacking = playerCharacter.IsAttacking();
+
+        ManageMovementSound(isGrounded);
+        PlayJumpSound(isJumping);
+
+        if (!isGrounded)
+        {
+            timeSinceLastGrounded += Time.deltaTime;
+        }
+
+        if (isAttacking && !wasAttacking)
+        {
+            dashSoundEvent.Post(gameObject);
+        }
+
+        wasGrounded = isGrounded;
+        wasJumping = isJumping;
+        wasAttacking = isAttacking;
     }
 
     private void ManageMovementSound(bool isGrounded)

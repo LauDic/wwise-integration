@@ -1,3 +1,6 @@
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// calculates player speed based on rigidbody and creates rtpc to send to wwise
+
 using UnityEngine;
 
 public class AKLD_MovementRTPC : MonoBehaviour
@@ -15,7 +18,8 @@ public class AKLD_MovementRTPC : MonoBehaviour
             Debug.LogError("Rigidbody not assigned. Please assign a Rigidbody to the script.");
         }
 
-        // Inicializar el RTPC en un valor predeterminado si es necesario
+        // Initialize the RTPC to a default value if required
+
         RTPCVelocity.SetValue(this.gameObject, 0.0f);
         forWindRTPCVelocity.SetValue(this.gameObject, 0.0f);
     }
@@ -24,10 +28,10 @@ public class AKLD_MovementRTPC : MonoBehaviour
     {
         if (rb != null)
         {
-            // Obtener la velocidad actual del Rigidbody
+            // Get the current Rigidbody speed
             float velocityMagnitude = rb.velocity.magnitude;
 
-            // Actualizar el RTPC en Wwise con la velocidad del Rigidbody
+            // Updating the RTPC in Wwise with Rigidbody speed
             RTPCVelocity.SetGlobalValue(velocityMagnitude);
             RTPCVelocity.SetValue(this.gameObject,velocityMagnitude);
             velocidad = velocityMagnitude;

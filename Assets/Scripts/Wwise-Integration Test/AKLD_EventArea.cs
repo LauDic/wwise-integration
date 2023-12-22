@@ -1,3 +1,6 @@
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// Creates Areas that trigger wwise events
+
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
@@ -8,55 +11,55 @@ public class AKLD_EventArea : MonoBehaviour
     [System.Serializable]
     public class AreaData
     {
-        // Configuración de la zona en forma de caja
+        // Zone configuration in the form of a box
         [Header("Box")]
-        public Vector3 relativeCenter = Vector3.zero;  // Centro relativo de la zona con respecto al objeto principal
-        public Vector3 size = new Vector3(1f, 1f, 1f);  // Tamaño de la zona en cada dimensión (x, y, z)
-        public string message = "Dentro del área";  // Mensaje a mostrar cuando se activa la zona
-        public Color gizmoColor = Color.yellow;  // Color del gizmo en el editor
+        public Vector3 relativeCenter = Vector3.zero;  // Relative center of the zone with respect to the main object
+        public Vector3 size = new Vector3(1f, 1f, 1f);  // Size of the zone in each dimension (x, y, z)
+        public string message = "Inside the area";  // Message to display when the zone is activated
+        public Color gizmoColor = Color.yellow;  // Gizmo color in the editor
 
-        // Configuración del evento Wwise
+        // Wwise event configuration
         [Header("Event")]
-        public AK.Wwise.Event myEvent = null;  // Evento de Wwise asociado a la zona
-        public bool stopEventOnExit = true;  // Indica si se debe detener el evento al salir de la zona
+        public AK.Wwise.Event myEvent = null;  // Wwise event associated with the zone
+        public bool stopEventOnExit = true;  // Indicates whether to stop the event when exiting the zone
 
         [HideInInspector]
-        public bool areaActivated = false;  // Indica si la zona está activada actualmente
+        public bool areaActivated = false;  // Indicates if the zone is currently activated
 
-        // Constructor por defecto para serialización
+        // Default constructor for serialization
         public AreaData() { }
 
-        // Método de inicialización
+        // Initialization method
         public void Initialize()
         {
-            size = new Vector3(1f, 1f, 1f);  // Inicializa el tamaño por defecto
+            size = new Vector3(1f, 1f, 1f);  // Initialize the default size
         }
     }
 
-    // Lista de datos de áreas
-    public List<AreaData> areas = new List<AreaData>() { new AreaData() };  // Al menos una área en la lista
-    public Transform objetoAVerificar;  // Objeto cuya posición se verifica para determinar la activación de áreas
+    // List of area data
+    public List<AreaData> areas = new List<AreaData>() { new AreaData() };  // At least one area in the list
+    public Transform objectToCheck;  // Object whose position is checked to determine area activation
 
     private void Update()
     {
-        if (objetoAVerificar != null)
+        if (objectToCheck != null)
         {
             foreach (var area in areas)
             {
-                // Verifica si el objeto está dentro de la zona y la zona no está activada
-                if (IsInsideArea(objetoAVerificar.position, area) && !area.areaActivated)
+                // Check if the object is inside the zone and the zone is not activated
+                if (IsInsideArea(objectToCheck.position, area) && !area.areaActivated)
                 {
-                    Debug.Log(area.message);  // Muestra el mensaje de la zona
-                    // Ejecuta el evento si está configurado
+                    Debug.Log(area.message);  // Display the zone message
+                    // Trigger the event if configured
                     if (area.myEvent != null) UpdateEvent(area.myEvent);
-                    area.areaActivated = true;  // Marca la zona como activada
+                    area.areaActivated = true;  // Mark the zone as activated
                 }
-                // Si el objeto no está dentro de la zona
-                else if (!IsInsideArea(objetoAVerificar.position, area))
+                // If the object is not inside the zone
+                else if (!IsInsideArea(objectToCheck.position, area))
                 {
-                    area.areaActivated = false;  // Marca la zona como no activada
+                    area.areaActivated = false;  // Mark the zone as not activated
 
-                    // Detiene el evento al salir de la zona si está configurado
+                    // Stop the event when exiting the zone if configured
                     if (area.stopEventOnExit && area.myEvent != null)
                     {
                         StopEvent(area.myEvent);
@@ -66,10 +69,10 @@ public class AKLD_EventArea : MonoBehaviour
         }
     }
 
-    // Determina si una posición está dentro de una zona
+    // Determines if a position is inside a zone
     private bool IsInsideArea(Vector3 position, AreaData area)
     {
-        Vector3 areaCenter = transform.position + area.relativeCenter;  // Centro global de la zona
+        Vector3 areaCenter = transform.position + area.relativeCenter;  // Global center of the zone
         float minX = areaCenter.x - area.size.x / 2;
         float maxX = areaCenter.x + area.size.x / 2;
         float minY = areaCenter.y - area.size.y / 2;
@@ -82,13 +85,13 @@ public class AKLD_EventArea : MonoBehaviour
                 position.z > minZ && position.z < maxZ);
     }
 
-     // Ejecuta un evento de Wwise
+    // Triggers a Wwise event
     private void UpdateEvent(AK.Wwise.Event myEvent)
     {
         myEvent.Post(this.gameObject);
     }
 
-    // Detiene un evento de Wwise al salir del box
+    // Stops a Wwise event when exiting the box
     private void StopEvent(AK.Wwise.Event myEvent)
     {
         myEvent.Stop(this.gameObject);
@@ -96,11 +99,11 @@ public class AKLD_EventArea : MonoBehaviour
 
 
 #if UNITY_EDITOR
-    // Editor personalizado para el inspector de Unity
+    // Custom editor for the Unity inspector
     [CustomEditor(typeof(AKLD_EventArea))]
     public class AKLD_EventAreaEditor : Editor
     {
-        // Dibuja gizmos en la escena del editor
+        // Draws gizmos in the editor scene
         private void OnSceneGUI()
         {
             AKLD_EventArea manager = target as AKLD_EventArea;
@@ -114,19 +117,19 @@ public class AKLD_EventArea : MonoBehaviour
             }
         }
 
-        // Dibuja el inspector personalizado en el Editor de Unity
+        // Draws the custom inspector in the Unity Editor
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
 
-            // Botón para inicializar los tamaños de las áreas
+            // Button to initialize area sizes
             if (GUILayout.Button("Initialize Sizes"))
             {
                 InitializeSizes();
             }
         }
 
-        // Inicializa los tamaños de las áreas
+        // Initializes area sizes
         private void InitializeSizes()
         {
             AKLD_EventArea manager = target as AKLD_EventArea;
@@ -140,7 +143,7 @@ public class AKLD_EventArea : MonoBehaviour
             }
         }
 
-        // Dibuja el gizmo de la zona en la escena del editor
+        // Draws the gizmo of the zone in the editor scene
         private void DrawAreaGizmo(AKLD_EventArea manager, AKLD_EventArea.AreaData area)
         {
             Vector3 areaGlobalCenter = manager.transform.position + area.relativeCenter;
@@ -151,3 +154,8 @@ public class AKLD_EventArea : MonoBehaviour
     }
 #endif
 }
+
+
+
+
+

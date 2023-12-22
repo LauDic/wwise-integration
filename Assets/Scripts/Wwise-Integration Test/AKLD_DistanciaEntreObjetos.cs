@@ -1,63 +1,62 @@
-// Script creado por Lautaro Dichio
-// Este script calcula la distancia entre dos objetos en un determinado eje
-// y envía el valor calculado como un RTPC (Real-Time Parameter Control) a Wwise.
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// This script calculates the distance between two objects on a specified axis
+// and sends the calculated value as an RTPC (Real-Time Parameter Control) to Wwise.
 
-
-using System.Collections;
-using System.Collections.Generic;
+// Importing necessary libraries
 using UnityEngine;
-using static AKLD_DistanciaEntreObjetos;
 
-public class AKLD_DistanciaEntreObjetos : MonoBehaviour
+// Defining the class for calculating distance between objects
+public class AKLD_DistanceBetweenObjects : MonoBehaviour
 {
-    // Variables para definir los objetos entre los cuales calcular la distancia
-    [Header("Distancia entre GO a RTPC")]
-    public Transform objeto1;
-    public Transform objeto2;
+    // Variables to define the objects between which to calculate the distance
+    [Header("Distance between Objects to RTPC")]
+    public Transform object1;
+    public Transform object2;
 
-    // Variables para seleccionar el eje en el que calcular la distancia
+    // Variables to select the axis on which to calculate the distance
     [Space(10)]
-    [Header("Elegir Eje en que calcular")]
-    public EjeDistancia ejeDistancia = EjeDistancia.Todos;
-    public enum EjeDistancia
+    [Header("Choose Axis to Calculate Distance")]
+    public AxisDistance axisDistance = AxisDistance.All;
+    public enum AxisDistance
     {
-        X, //solo calcula distancia en eje x
-        Y, //solo calcula distancia en eje y
-        Z, //solo calcula distancia en eje z
-        Todos //calcula la distancia en todos los ejes
+        X, // only calculate distance on the X axis
+        Y, // only calculate distance on the Y axis
+        Z, // only calculate distance on the Z axis
+        All // calculate distance on all axes
     }
 
-    // Variable para almacenar la distancia calculada y verla en el inspector
+    // Variable to store the calculated distance and view it in the inspector
     [Space(10)]
-    [Header("Distancia")]
-    public float distancia;
+    [Header("Distance")]
+    public float distance;
 
-    // Variable para el RTPC que se actualizará con la distancia calculada
+    // Variable for the RTPC that will be updated with the calculated distance
     [Header("RTPC")]
     [SerializeField]
-    private AK.Wwise.RTPC rtpc = null; 
+    private AK.Wwise.RTPC rtpc = null;
 
-
+    // Update is called once per frame
     void Update()
     {
-        // Switch para determinar en qué eje calcular la distancia
-        switch (ejeDistancia)
+        // Switch to determine on which axis to calculate the distance
+        switch (axisDistance)
         {
-            case EjeDistancia.X:
-                distancia = Mathf.Abs(objeto1.position.x - objeto2.position.x);
+            case AxisDistance.X:
+                distance = Mathf.Abs(object1.position.x - object2.position.x);
                 break;
-            case EjeDistancia.Y:
-                distancia = Mathf.Abs(objeto1.position.y - objeto2.position.y);
+            case AxisDistance.Y:
+                distance = Mathf.Abs(object1.position.y - object2.position.y);
                 break;
-            case EjeDistancia.Z:
-                distancia = Mathf.Abs(objeto1.position.z - objeto2.position.z);
+            case AxisDistance.Z:
+                distance = Mathf.Abs(object1.position.z - object2.position.z);
                 break;
-            case EjeDistancia.Todos:
-                distancia = Vector3.Distance(objeto1.position, objeto2.position);
+            case AxisDistance.All:
+                distance = Vector3.Distance(object1.position, object2.position);
                 break;
         }
 
-        // Actualiza el RTPC con el valor de la distancia calculada
-        rtpc.SetGlobalValue(distancia);
+        // Update the RTPC with the value of the calculated distance
+        rtpc.SetGlobalValue(distance);
     }
 }
+

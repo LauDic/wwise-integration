@@ -1,18 +1,20 @@
+//Script for the sound of the impact of the ball in the water, due to time issues it was not solved.
+
 using UnityEngine;
 
-public class AKLD_RespawnAudio : MonoBehaviour
+public class AKLD_SplashWater : MonoBehaviour
 {
     [SerializeField] private AK.Wwise.Event wwiseEvent;
     [SerializeField] private AK.Wwise.Switch wwiseSwitch;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player")) // Puedes ajustar la condición según tus necesidades
+        if (collision.gameObject.CompareTag("Player")) 
         {
             // Cambia el switch
             if (wwiseSwitch != null)
             {
-                wwiseSwitch.SetValue(gameObject);
+                wwiseSwitch.SetValue(this.gameObject);
             }
 
             // Envía el evento
