@@ -1,7 +1,9 @@
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// Define areas to send wwise state values for quick visualization and tracking within the scene.  
+
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
-using AK.Wwise;
 
 public class AKLD_StateAreas : MonoBehaviour
 {

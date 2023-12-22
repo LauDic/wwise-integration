@@ -1,3 +1,6 @@
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// Playback of the speed increase sound. 
+
 using UnityEngine;
 
 public class SpeedTriggerAudioManager : MonoBehaviour

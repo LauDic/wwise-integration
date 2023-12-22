@@ -1,5 +1,6 @@
+// Script created by Lautaro Dichio for the 3dar audio developer test.
+// This script is in charge of controlling all wwise events related to the movement of the ball. 
 using UnityEngine;
-using AK.Wwise;
 
 public class AKLD_PlayerSoundManager : MonoBehaviour
 {
@@ -17,13 +18,16 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
     private float groundedCheckDelay = 1.0f;
     private float timeSinceLastGrounded = 0.0f;
 
+
     private void Start()
     {
+        
         if (playerCharacter == null)
         {
             Debug.LogError("PlayerCharacter not assigned. Please assign a PlayerCharacter to the script.");
         }
 
+        // Se inicializan eventos de movimiento en wwise.
         movementSoundEvent.Post(gameObject);
         movementSoundEvent.Stop(gameObject, 0, AkCurveInterpolation.AkCurveInterpolation_Linear);
 
@@ -42,6 +46,7 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
         bool isJumping = playerCharacter.IsJumping();
         bool isAttacking = playerCharacter.IsAttacking();
 
+        
         ManageMovementSound(isGrounded);
         PlayJumpSound(isJumping);
 
@@ -60,8 +65,10 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
         wasAttacking = isAttacking;
     }
 
+    
     private void ManageMovementSound(bool isGrounded)
     {
+        //  Playing movement sound based on character status.
         if (isGrounded && !wasGrounded)
         {
             movementSoundEvent.Post(gameObject);
@@ -74,6 +81,7 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
 
     private void PlayJumpSound(bool isJumping)
     {
+        // Playing jumping sound if the character is jumping. 
         if (isJumping && !wasJumping)
         {
             jumpSoundEvent.Post(gameObject);
@@ -82,14 +90,20 @@ public class AKLD_PlayerSoundManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Check if enough time has passed since the last jump to avoid impact sounds when rolling between game objects.    
         if (timeSinceLastGrounded >= groundedCheckDelay)
         {
+            //Calculates the impact velocity based on the collision information.
             float impactSpeed = Mathf.Abs(Vector3.Dot(collision.relativeVelocity, collision.contacts[0].normal));
+
+            //Set the value of the impact velocity variable in an rtpc to determine the impact volume. 
             velocityImpact.SetGlobalValue(impactSpeed);
 
+            //Impact sound reproduction.  
             impactEvent.Post(this.gameObject);
             velocityImpactf = impactSpeed;
 
+            //Reset the time since the last jump.
             timeSinceLastGrounded = 0.0f;
         }
     }
