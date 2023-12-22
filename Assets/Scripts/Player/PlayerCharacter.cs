@@ -67,6 +67,7 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
                 characterJumping = true;
                 rb.AddForce(Vector3.up * playerSettings.jumpForce, ForceMode.VelocityChange);
 
+
             }
         }
 
@@ -206,5 +207,10 @@ public class PlayerCharacter : MonoBehaviour, ICharacter
     public bool IsGrounded()
     {
         return characterGrounded;
+    }
+
+    public bool IsJumping()
+    {
+        return characterJumping;
     }
 }

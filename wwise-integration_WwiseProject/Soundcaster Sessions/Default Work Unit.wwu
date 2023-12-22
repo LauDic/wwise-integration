@@ -16,13 +16,17 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="BallImpactVelocity" ID="{5D0B21FA-0338-4199-A7E1-1840D0D2CE48}"/>
+							<Value>13.1548311990687</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="BallVelocity" ID="{D14C5279-BE93-4B06-BB54-440828B5DE2D}"/>
-							<Value>39.4412107101281</Value>
+							<Value>40</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{81A07341-A0FC-4533-9F9A-958F2FFB86C1}"/>
+						<CurrentSwitchRef Name="Dust" ID="{8D8EC680-1D7F-44F1-A729-D855D66CE66F}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

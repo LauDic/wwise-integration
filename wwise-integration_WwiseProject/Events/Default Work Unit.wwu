@@ -5,7 +5,17 @@
 			<ChildrenList>
 				<Folder Name="Ball" ID="{8C5C1E20-77D3-457F-AC46-6A16DB9914B7}" ShortID="202213290">
 					<ChildrenList>
-						<Event Name="Ball_JumpImpact" ID="{80BD566D-2A78-4857-818F-3DC3E65285A9}"/>
+						<Event Name="Ball_Jump" ID="{80BD566D-2A78-4857-818F-3DC3E65285A9}">
+							<ChildrenList>
+								<Action Name="" ID="{E882B820-C20A-4136-98A1-B4DB8C6A4AF1}" ShortID="126455815">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{0F3DEADA-1C87-444B-9E91-C5F425FAFA52}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Ball_Movement" ID="{7BF8ACFE-0F98-4969-89D8-84D4C554CFAD}">
 							<ChildrenList>
 								<Action Name="" ID="{19AF7845-D511-44FA-A180-3C386DFF8A6F}" ShortID="772763607">
@@ -18,6 +28,17 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Ball_Water" ID="{E8392179-DD02-4027-9D0D-A239E7769416}"/>
+						<Event Name="Ball_Impact" ID="{50315853-DF13-49D0-B2D7-92323295AC71}">
+							<ChildrenList>
+								<Action Name="" ID="{636204B1-B140-48E1-8D70-47DB48CC278F}" ShortID="652736017">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Impact" ID="{59657B9B-3C58-4C8E-AEB8-248363764BA0}" WorkUnitID="{2EBA123F-BAA8-4594-868E-9FFC6059FE91}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Diamond" ID="{AAD78601-FCEC-4DDC-AF42-5ADBACF7AF32}" ShortID="93364234">

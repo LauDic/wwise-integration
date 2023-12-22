@@ -14,7 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE = 85412153U;
-        static const AkUniqueID BALL_JUMPIMPACT = 2556507283U;
+        static const AkUniqueID BALL_IMPACT = 1165162655U;
+        static const AkUniqueID BALL_JUMP = 134222113U;
         static const AkUniqueID BALL_MOVEMENT = 285418122U;
         static const AkUniqueID BALL_WATER = 3822983202U;
         static const AkUniqueID DIAMOND_AIM = 1050447289U;
@@ -48,6 +49,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BALLIMPACTVELOCITY = 2062901289U;
         static const AkUniqueID BALLVELOCITY = 149143475U;
         static const AkUniqueID VICTORYLANE = 1267329435U;
     } // namespace GAME_PARAMETERS

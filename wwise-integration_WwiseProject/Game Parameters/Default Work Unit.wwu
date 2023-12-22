@@ -15,6 +15,12 @@
 						<Property Name="Max" Type="Real64" Value="40"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="BallImpactVelocity" ID="{5D0B21FA-0338-4199-A7E1-1840D0D2CE48}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="11"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
